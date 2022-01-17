@@ -120,6 +120,62 @@ public class AryLinkedList<E> {
 			}
 		}
 	}
+	public void remove(int p) {
+		if(head!=NULL) {
+			if (p==head)
+				removeFirst();
+			else {
+				int ptr=head;
+				
+				while(n[ptr].next!=p) {
+					ptr=n[ptr].next;
+					if(ptr==NULL)return;
+				}
+				n[ptr].next=NULL;
+				deleteIndex(p);
+				n[ptr].next=n[p].next;
+				crnt=ptr;
+				}
+				
+			}
+		}
+	public void removeCurrenNode() {
+		remove(crnt);
+	}
+	public void clear() {
+		while(head!=NULL)
+			removeFirst();
+		crnt=NULL;
+	}
+	public boolean next() {
+		if(crnt==NULL||n[crnt].next==NULL)
+			return false;
+		crnt=n[crnt].next;
+		return true;
+	}
+	public void printCurrentNode() {
+		if(crnt==NULL)
+			System.out.println("선택 노드가 없습니다.");
+		else
+			System.out.println(n[crnt].dnext);
+	}
+	public void dump() {
+		int ptr=head;
+		
+		while (ptr!=NULL) {
+		System.out.println(n[ptr].data);
+		ptr=n[ptr].next;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
