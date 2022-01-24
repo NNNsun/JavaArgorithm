@@ -3,7 +3,7 @@ public class GH {
 
 	public static void main(String[] args) {
 		
-		System.out.println("다이아몬드 층");
+		System.out.println("다이아몬드");
 		
 		int num=3;
 		
