@@ -11,7 +11,7 @@ public class bmMatch {
 		//건너뛰기 표 만들기
 		for (pt = 0; pt <= Character.MAX_VALUE; pt++)
 			skip[pt] = patLen;
-		for (pt = 0; pt < patLen - 1; pt++)
+		for (pt = 0; pt < patLen - 1; pt++) 
 			skip[pat.charAt(pt)] = patLen - pt - 1;		//pt==patLen-1
 		
 		
