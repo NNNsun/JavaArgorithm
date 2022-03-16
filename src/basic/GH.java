@@ -13,7 +13,7 @@ public class GH {
 				System.out.print(" ");
 			
 			for(int j=0;j<=i*2;j++) {
-				System.out.print("*");
+				System.out.print("+");
 				
 			}
 			
@@ -25,11 +25,11 @@ public class GH {
 				System.out.print(" ");	
 		
 			for(int j=num+1;j>=i*2;j--) 
-				System.out.print("*");
+				System.out.print("+");
 			System.out.println();
 		}
 		
-		
+	
 	}
 		
 }

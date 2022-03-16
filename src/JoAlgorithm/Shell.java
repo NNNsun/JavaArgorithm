@@ -1,5 +1,7 @@
 package JoAlgorithm;
 
+//shell 정렬은 삽입 정렬을 보안한 알고리즘이다.
+
 public class Shell extends AbstractSort {
 	public static void sort(Comparable[] a) {
 		int h = 1;
@@ -11,13 +13,14 @@ public class Shell extends AbstractSort {
 		
 		while (h >= 1) {
 			for (int i = h; i < a.length; i++) {
+				
 				//Insert 정렬 부분
 				for (int j = i; j >= h && less(a[j], a[j - h]); j -= h)
 					exch(a, j, j - h);
 			}
 			h/=3;
 		}
-
+		
 	}
 
 	public static void main(String[] args) {
