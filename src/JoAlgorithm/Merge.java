@@ -1,4 +1,5 @@
 package JoAlgorithm;
+//stable함
 
 public class Merge extends AbstractSort {
 
@@ -17,7 +18,7 @@ public class Merge extends AbstractSort {
 		//lo부터 hi까지 전체를 돈다
 		for(int k=lo; k<=hi;k++) {
 		//다끝났을 경우
-			//
+			
 			if(i>mid)						a[k]=aux[j++];
 			else if(j>hi)					a[k]=aux[i++];
 			
@@ -35,7 +36,7 @@ public class Merge extends AbstractSort {
 		//반반씩 정렬이 되어있는 array
 		Comparable[] arr = {2,43,46,54,3124,35,43,57,426,500};
 		Comparable[] arr2=new Comparable[10];
-		merge(arr,arr2,0,4,9);
+		merge(arr,arr2,0,(arr.length-1)/2,9);
 		for(int i=0; i<arr.length;i++) {
 			System.out.print(arr[i]+" ");
 		}
