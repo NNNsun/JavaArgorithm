@@ -38,6 +38,8 @@ public class MergeBU extends AbstractSort{
 		System.out.print("MergeBU= ");
 		for (int i = 0; i < a.length; i++)
 			System.out.print(a[i]);
+		System.out.println();
+		
 
 	}
 
